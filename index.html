@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sota | Portfolio</title>
+    <meta
+      name="description"
+      content="Simulation-driven design, vehicle dynamics, CAD automation, and systems engineering portfolio."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="global-nav">
+      <div class="nav-inner">
+        <a class="brand" href="#top">Sota</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#approach">Approach</a>
+          <a href="#stack">Stack</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-light">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="flow flow-a"></div>
+          <div class="flow flow-b"></div>
+          <div class="flow flow-c"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Simulation-driven design, shaped into products.</h1>
+          <p class="hero-lead">
+            車両運動、最適化、CAD 自動化、開発ツールを横断して、制約の中でシステム全体を組み上げるためのポートフォリオです。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">作品を見る</a>
+            <a class="button button-secondary" href="#contact">GitHub をつなぐ</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="approach" class="feature-band section-light">
+        <div class="feature-copy">
+          <p class="eyebrow">Approach</p>
+          <h2>Architecture first.</h2>
+          <p>
+            単体のツールより、設計・解析・自動化をつなぐパイプライン全体を重視しています。MDO、SBAO、車両ダイナミクス、製造フローまでを一つの設計対象として扱います。
+          </p>
+        </div>
+        <div class="feature-metrics">
+          <div>
+            <span class="metric-value">14 DOF</span>
+            <span class="metric-label">Vehicle Dynamics</span>
+          </div>
+          <div>
+            <span class="metric-value">3-stage</span>
+            <span class="metric-label">Optimization Pipeline</span>
+          </div>
+          <div>
+            <span class="metric-value">CAD + CFD</span>
+            <span class="metric-label">Integrated Workflow</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-band section-dark">
+        <div class="feature-copy">
+          <p class="eyebrow eyebrow-dark">Thinking</p>
+          <h2>Constraint-aware. Systems-oriented.</h2>
+          <p>
+            計算資源、予算、製造性、運用コスト。制約を後回しにせず、最初から設計条件として扱います。理論と実装の間を埋めるのが主戦場です。
+          </p>
+        </div>
+        <div class="quote-panel">
+          <p>
+            制約の中で大規模なシステムを設計・統合することに関心があり、学術的な手法を現実の開発フローへ落とし込むことを重視しています。
+          </p>
+        </div>
+      </section>
+
+      <section id="stack" class="stack-section section-light">
+        <div class="section-heading">
+          <p class="eyebrow">Stack</p>
+          <h2>Core tools and disciplines.</h2>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-tile">
+            <h3>Simulation</h3>
+            <p>C++ / Python / MATLAB / OpenMDAO / OpenFOAM / Cantera / pybind11</p>
+          </article>
+          <article class="stack-tile">
+            <h3>Optimization</h3>
+            <p>NSGA-II / EGO / Gradient-based methods / PINN / surrogate pipelines</p>
+          </article>
+          <article class="stack-tile">
+            <h3>CAD & Manufacturing</h3>
+            <p>Onshape / FeatureScript / SolidWorks VBA / 3D printing / drawing automation</p>
+          </article>
+          <article class="stack-tile">
+            <h3>Apps & Systems</h3>
+            <p>Rust / Tauri 2 / firmware integration / API workflows / trading infrastructure</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section section-light">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work.</h2>
+          <p class="section-copy">
+            公開している GitHub リポジトリを起点に、シミュレーション、最適化、ユーティリティの流れが見えるように並べています。
+          </p>
+        </div>
+        <div id="project-grid" class="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="contact" class="contact-section section-dark">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-dark">Contact</p>
+          <h2>Open architecture, open collaboration.</h2>
+        </div>
+        <div class="contact-row">
+          <a id="github-profile-link" class="button button-primary-dark" href="#" target="_blank" rel="noreferrer">
+            GitHub Profile
+          </a>
+          <p class="contact-copy">
+            公開リポジトリを増やせば、この構成のままポートフォリオの面を拡張できます。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
