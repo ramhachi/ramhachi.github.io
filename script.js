@@ -2,40 +2,31 @@ const portfolioConfig = {
   githubProfileUrl: "https://github.com/ramhachi",
   projects: [
     {
-      title: "CFD_simple",
+      title: "CFD_opt_sdf",
       category: "CFD",
       description:
-        "流体解析の基礎検討用リポジトリ。空力解析とその周辺パイプラインに関心があることを最初の導線として置いています。",
-      stack: "CFD / simulation workflow",
-      href: "https://github.com/ramhachi/CFD_simple",
+        "固定格子Brinkman探索、SDF形状処理、OpenFOAM検証をつなぐ空力最適化パイプラインです。",
+      stack: "OpenFOAM / SDF / topology optimization",
+      href: "https://github.com/ramhachi/CFD_opt_sdf",
       theme: "light",
     },
     {
-      title: "airodevice_optimize2",
-      category: "Optimization",
+      title: "intake_ex_engine_opt",
+      category: "Engineering Tool",
       description:
-        "空力デバイスの最適化を主題にした公開リポジトリ。設計変数と性能評価をつなぐ、最適化指向の開発スタイルを示します。",
-      stack: "aerodynamic optimization / design iteration",
-      href: "https://github.com/ramhachi/airodevice_optimize2",
+        "FSAEエンジンの吸排気候補を探索し、shared-plenum再評価と結果エクスポートまで行う実用ツールです。",
+      stack: "FastAPI / Docker / reduced-order optimization",
+      href: "https://github.com/ramhachi/intake_ex_engine_opt",
       theme: "dark",
     },
     {
-      title: "PDF_md",
-      category: "Utility",
+      title: "sim_overall",
+      category: "Vehicle Dynamics",
       description:
-        "Markdown から PDF へ落とし込むための公開ツール。技術文書や情報整理への関心を見せる、軽量なユーティリティ枠です。",
-      stack: "documentation / markdown / pdf",
-      href: "https://github.com/ramhachi/PDF_md",
+        "14自由度車両モデル、タイヤモデル、C++・MATLAB・Pythonを統合した車両シミュレーション基盤です。",
+      stack: "C++ / MATLAB / Python / vehicle dynamics",
+      href: "https://github.com/ramhachi/sim_overall",
       theme: "dark",
-    },
-    {
-      title: "syspro_network",
-      category: "Systems",
-      description:
-        "ネットワーク系のシステムプログラミング実験用リポジトリ。低レイヤまで扱えることを示すために入れています。",
-      stack: "systems programming / networking",
-      href: "https://github.com/ramhachi/syspro_network",
-      theme: "light",
     },
   ],
 };
