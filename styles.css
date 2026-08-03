@@ -104,7 +104,7 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
   color: var(--black);
   background: var(--orange);
   border-radius: 50%;
-  font-size: clamp(1rem, 1.7vw, 1.45rem);
+  font-size: clamp(1.35rem, 2.1vw, 1.75rem);
   font-weight: 400;
   line-height: 1.2;
   text-align: center;
@@ -165,7 +165,7 @@ footer { margin-top: 4rem; color: #8d8d8d; font-family: var(--label); font-size:
   .text-panel, .project-copy, .skill-panel, .contact-title, .contact-links { padding: 4rem 2rem; }
   .project-visual { min-height: 66svh; }
   .project-visual.visual-cfd { min-height: 0; aspect-ratio: 5 / 2; }
-  .dev-badge { top: 1.25rem; right: 1.25rem; width: 6.5rem; font-size: 1rem; }
+  .dev-badge { top: 1.25rem; right: 1.25rem; width: 6.5rem; padding: .5rem; font-size: 1.35rem; }
   .contact-title { min-height: 24rem; }
   .contact-links { min-height: 26rem; }
 }
