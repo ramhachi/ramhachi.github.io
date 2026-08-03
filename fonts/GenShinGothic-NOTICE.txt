@@ -1,6 +1,7 @@
 源真ゴシック（Gen Shin Gothic）
 
-This font is bundled for the Japanese body text of this portfolio.
+The Regular and Bold weights of this font are bundled for the Japanese body
+text of this portfolio.
 The font is distributed under the SIL Open Font License 1.1. The original
 license text is included in SIL_Open_Font_License_1.1.txt.
 
