@@ -101,8 +101,8 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
 .project-link { display: inline-block; margin-top: 1.5rem; border-bottom: 2px solid var(--black); font-size: .86rem; font-weight: 700; }
 .project-link:hover { border-color: var(--orange); color: var(--orange); }
 .project-visual { min-height: 45rem; }
-.visual-sim { background: #0d1931; }.visual-cfd { background: var(--orange); }.visual-logger { background: var(--green); }
-.flow-lines { position: absolute; inset: 12% -8%; }.flow-lines i { position: absolute; left: 0; width: 100%; height: 15%; border: 2px solid rgba(0,0,0,.49); border-color: rgba(0,0,0,.49) transparent transparent; border-radius: 50%; }.flow-lines i:nth-child(1) { top: 10%; transform: rotate(4deg); }.flow-lines i:nth-child(2) { top: 28%; transform: rotate(-5deg); }.flow-lines i:nth-child(3) { top: 47%; transform: rotate(7deg); }.flow-lines i:nth-child(4) { top: 65%; transform: rotate(-7deg); }.flow-lines i:nth-child(5) { top: 82%; transform: rotate(3deg); }
+.visual-sim { background: #0d1931; }.visual-cfd { background: #151d26; }.visual-logger { background: var(--green); }
+.cfd-image { object-fit: contain; object-position: center; }
 
 .skill-panel { display: grid; align-content: center; padding: clamp(4rem, 7vw, 7rem); background: var(--black); color: var(--white); }
 .skill-row { display: grid; grid-template-columns: 2.7rem 1fr; gap: 1.2rem; padding: 1.7rem 0; border-bottom: 1px solid rgba(255,255,255,.3); }.skill-row:first-child { border-top: 1px solid rgba(255,255,255,.3); }
@@ -126,6 +126,7 @@ footer { margin-top: 4rem; color: #8d8d8d; font-family: var(--label); font-size:
   .section-header { min-height: 19rem; padding: 4rem 2rem; }
   .text-panel, .project-copy, .skill-panel, .contact-title, .contact-links { padding: 4rem 2rem; }
   .project-visual { min-height: 66svh; }
+  .project-visual.visual-cfd { min-height: 0; aspect-ratio: 5 / 2; }
   .contact-title { min-height: 24rem; }
   .contact-links { min-height: 26rem; }
 }
