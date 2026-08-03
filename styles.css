@@ -148,6 +148,11 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
 .sim-figure figcaption { position: absolute; right: .7rem; bottom: .6rem; z-index: 1; display: grid; gap: .08rem; padding: .3rem .45rem; color: var(--white); background: rgba(0,0,0,.72); text-align: right; }
 .sim-figure figcaption span { font-family: var(--label); font-size: .52rem; font-weight: 800; letter-spacing: .14em; }
 .sim-figure figcaption strong { font-family: var(--jp-body); font-size: .66rem; font-weight: var(--jp-body-weight); }
+.logger-showcase { display: grid; grid-template-rows: 58% 42%; background: var(--white); }
+.logger-data-frame, .logger-photo-frame { position: relative; min-height: 0; overflow: hidden; }
+.logger-data-frame { border-bottom: 1px solid rgba(11,11,11,.25); background: #e8e8e6; }
+.logger-data { width: 100%; height: 100%; object-fit: contain; }
+.logger-photo-frame { background: var(--green); }
 .cfd-image { object-fit: contain; object-position: center; }
 
 .skill-panel { display: grid; align-content: center; padding: clamp(4rem, 7vw, 7rem); background: var(--black); color: var(--white); }
@@ -176,9 +181,11 @@ footer { margin-top: 4rem; color: #8d8d8d; font-family: var(--label); font-size:
   .sim-showcase { min-height: 72rem; grid-template-rows: 40% 60%; }
   .sim-gallery { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
   .sim-figure + .sim-figure { border-top: 1px solid rgba(11,11,11,.25); border-left: 0; }
+  .logger-showcase { min-height: 58rem; grid-template-rows: 58% 42%; }
   .project-visual.visual-cfd { min-height: 0; aspect-ratio: 5 / 2; }
   .dev-badge { top: 1.25rem; right: 1.25rem; width: 6.5rem; padding: .5rem; font-size: 1.35rem; }
-  .contact-title, .contact-links { order: initial; }
+  .contact-title { order: 1; }
+  .contact-links { order: 2; }
   .contact-title { min-height: 24rem; }
   .contact-links { min-height: 26rem; }
 }
