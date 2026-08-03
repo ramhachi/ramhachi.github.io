@@ -78,7 +78,7 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
 .background { margin-top: 3rem; padding-top: 1.65rem; border-top: 1px solid rgba(0,0,0,.3); }
 .background-label { color: var(--black) !important; font-family: var(--label) !important; font-size: .7rem !important; font-weight: 800 !important; letter-spacing: .18em; }
 .background-list { display: grid; margin: 1rem 0 0; padding: 0; list-style: none; }
-.background-list li { display: grid; grid-template-columns: 4.6rem 1fr; gap: 1rem; padding: .9rem 0; border-top: 1px solid rgba(0,0,0,.18); }
+.background-list li { display: grid; grid-template-columns: 6.25rem 1fr; gap: 1rem; padding: .9rem 0; border-top: 1px solid rgba(0,0,0,.18); }
 .background-list li:last-child { border-bottom: 1px solid rgba(0,0,0,.18); }
 .background-list li > span:first-child { font-family: var(--label); font-size: .7rem; font-weight: 800; letter-spacing: .12em; }
 .background-list li > span:last-child { color: var(--muted); font-family: var(--jp-body); font-size: .9rem; font-weight: var(--jp-body-weight); line-height: 1.7; }
