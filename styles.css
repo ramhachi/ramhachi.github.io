@@ -7,8 +7,8 @@
   --orange: #ed6948;
   --green: #416b61;
   --muted: #606060;
-  --sans: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif;
-  --label: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif;
+  --sans: "Raleway", "Noto Sans JP", Helvetica, sans-serif;
+  --label: "Raleway", "Noto Sans JP", Helvetica, sans-serif;
   --jp-heading: "Checkpoint", "Noto Sans JP", sans-serif;
   --jp-body: "Gen Shin Gothic", "源真ゴシック", "Noto Sans JP", sans-serif;
   --jp-body-weight: 700;
@@ -49,7 +49,7 @@ a { color: inherit; text-decoration: none; }
 .hero-copy { display: flex; min-height: 100svh; align-items: center; justify-content: center; padding: clamp(2rem, 7vw, 7.5rem); background: var(--yellow); }
 .corner-label { position: absolute; top: 2rem; left: clamp(2rem, 7vw, 7.5rem); font-family: var(--label); font-size: .68rem; font-weight: 800; letter-spacing: .18em; }
 .hero-inner { width: min(100%, 31rem); text-align: center; }
-h1 { font-size: clamp(4.1rem, 6.8vw, 7.1rem); font-weight: 700; letter-spacing: -.055em; line-height: 1.02; }
+h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-size: clamp(4.1rem, 6.8vw, 7.1rem); font-weight: 700; letter-spacing: -.055em; line-height: 1.02; }
 .hero-byline { margin-top: 2rem; font-family: var(--label); font-size: 1.05rem; font-weight: 600; letter-spacing: .17em; }
 .down-link { display: inline-block; margin-top: 2rem; font-size: 4.5rem; font-weight: 700; line-height: 1; transition: transform .2s ease; }
 .down-link:hover, .down-link:focus-visible { transform: translateY(.35rem); }
