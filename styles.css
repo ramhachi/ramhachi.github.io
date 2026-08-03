@@ -81,6 +81,9 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
 .background-list li:last-child { border-bottom: 1px solid rgba(0,0,0,.18); }
 .background-list li > span:first-child { font-family: var(--label); font-size: .7rem; font-weight: 800; letter-spacing: .12em; }
 .background-list li > span:last-child { color: var(--muted); font-family: var(--jp-body); font-size: .9rem; font-weight: var(--jp-body-weight); line-height: 1.7; }
+.parallel-practice { margin-top: 1.55rem; }
+.parallel-list { margin-top: .7rem; }
+.parallel-list li { padding: .72rem 0; }
 .section-header-dark { color: var(--white); background: var(--black); }
 .text-panel-yellow, .section-header-yellow { background: var(--yellow); }
 
