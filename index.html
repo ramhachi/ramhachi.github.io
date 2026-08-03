@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="皆川草太の技術ポートフォリオ。FSAE、空力最適化、組み込み開発、数値シミュレーション。"
+      content="皆川草太の技術ポートフォリオ。複雑な課題を構造化し、FSAE、空力最適化、組み込み開発、数値シミュレーションを実装へつなぐ。"
     />
     <title>皆川草太 | Integrated Engineering</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,16 +46,16 @@
         <div class="panel text-panel">
           <div class="reading-column">
             <p class="lead">
-              機械を作り、コードを書き、現場で確かめる。
+              複雑さを、構造化して動かす。
             </p>
             <p>
-              皆川草太です。機械・電気・ソフトウェアを横断し、複雑な課題を実現可能な形まで分解していくことを得意としています。
+              皆川草太です。機械・電装・ソフトウェア・AIを横断し、技術要素、人、資源、情報の関係を整理して、実装可能なシステムへ変えることに取り組んでいます。
             </p>
             <p>
-              FSAEと鳥人間コンテストを通じて、車両運動、空力、組み込み、数値解析に取り組んできました。数式やシミュレーションだけで終えず、実装し、作り、測り、次の設計へ戻すところまでを一つの開発として扱います。
+              新しい課題では、個別の作業に入る前に、目的、制約、情報の流れ、ボトルネックを定義します。そこから設計・解析・製作・検証をつなぎ、小さく試して結果から更新する開発を行います。
             </p>
             <p>
-              アーキテクチャを先に設計して技術的な難しさを整理し、関係者と条件をすり合わせながら、現場で使える形まで持っていくことが私の強みです。
+              学生フォーミュラでは車両開発とスポンサー開拓を担い、技術的な説明と企業ごとの提案設計を通じて、25社から総額約280万円相当の支援を獲得しました。技術を理解するだけでなく、関係者が判断・協働できる形に翻訳して前に進めることも、自分の役割だと考えています。
             </p>
             <div class="background" aria-label="略歴">
               <p class="background-label">BACKGROUND</p>
@@ -78,9 +78,9 @@
         </header>
         <div class="panel text-panel text-panel-yellow">
           <div class="reading-column">
-            <p class="lead">設計・解析・製作を、分断せずに扱う。</p>
+            <p class="lead">技術を、現場で動くシステムまでつなぐ。</p>
             <p>
-              代表的な三つのプロジェクトです。それぞれ、課題設定からアーキテクチャ、実装、検証までを担当しています。
+              代表的な三つのプロジェクトです。課題設定からアーキテクチャ、実装、検証までを一貫して担当し、全体の制約を踏まえて設計判断を行っています。
             </p>
             <nav class="project-index" aria-label="プロジェクト一覧">
               <a href="#sim"><span>01</span> sim_overall</a>
@@ -100,7 +100,7 @@
               FSAE車両の全体設計と部品設計を、一つの基盤で最適化する。
             </p>
             <p>
-              高自由度車両シミュレータをゼロから構築。アーキテクチャとインターフェースを先に定義し、AIエージェントを含む実装手段を組み込みやすい構造にすることで、開発速度と拡張性を高めました。
+              高自由度車両シミュレータをゼロから構築。車両全体と個別部品のトレードオフを同じ基盤で扱えるよう、アーキテクチャとインターフェースを先に定義し、解析・最適化・制御モデルを拡張できる構造にしました。
             </p>
             <ul class="result-list">
               <li>PINNによるタイヤデータフィッティング</li>
@@ -133,7 +133,7 @@
               トポロジーの変化を許容する、空力形状の自動最適化。
             </p>
             <p>
-              FSAEと鳥人間コンテストの空力設計を対象に、Signed Distance Field（SDF）を用いた最適化手法を開発しました。従来手法で固定されやすかった形状トポロジーを、最適化の途中でも変化させられる表現へ置き換えています。
+              FSAEと鳥人間コンテストの空力設計を対象に、Signed Distance Field（SDF）を用いた最適化手法を開発しました。形状表現自体を設計自由度として扱い、従来手法で固定されやすかったトポロジーを、最適化の途中でも変化させられる表現へ置き換えています。
             </p>
             <ul class="result-list">
               <li>任意形状を対象とした空力最適化</li>
@@ -155,7 +155,7 @@
               フライトを理解するために、必要なデータを確実に残す。
             </p>
             <p>
-              2024年・2025年の鳥人間コンテストに向けて、要件設定、ハードウェア、組み込みソフトウェアを一貫して開発。RP2040のコア特性を利用して処理の待ち時間を減らし、軽量化のために必要十分な構成へ絞りました。
+              フライト後の議論を再現可能な設計判断へ変えるため、2024年・2025年の鳥人間コンテストに向けて、要件設定、ハードウェア、組み込みソフトウェアを一貫して開発。RP2040のコア特性を利用して処理の待ち時間を減らし、軽量化のために必要十分な構成へ絞りました。
             </p>
             <ul class="result-list">
               <li>高度・姿勢・速度・GPS・湿度・大気圧を取得</li>
@@ -180,7 +180,8 @@
           <div class="skill-row"><span>01</span><div><h3>Simulation &amp; Optimization</h3><p>Python, C++, MATLAB, OpenFOAM, PINN, RL, MPC</p></div></div>
           <div class="skill-row"><span>02</span><div><h3>Mechanical Design</h3><p>CAD, CAE, vehicle dynamics, aerodynamics, manufacturing</p></div></div>
           <div class="skill-row"><span>03</span><div><h3>Embedded &amp; Data</h3><p>RP2040, sensors, firmware, logging, data analysis</p></div></div>
-          <div class="skill-row"><span>04</span><div><h3>Architecture First</h3><p class="jp-body">複雑な開発を分解し、実装と検証を継続できる構造へ整理します。</p></div></div>
+          <div class="skill-row"><span>04</span><div><h3>Architecture First</h3><p class="jp-body">目的・制約・インターフェースを先に定義し、実装と検証を並行できる構造をつくります。</p></div></div>
+          <div class="skill-row"><span>05</span><div><h3>Technical Communication</h3><p class="jp-body">技術的な内容を、開発者や企業担当者など相手の判断軸に合わせて説明し、協働へつなげます。</p></div></div>
         </div>
       </section>
 
@@ -188,7 +189,7 @@
         <div class="panel contact-title">
           <p class="section-number">04</p>
           <h2>Get in<br />touch</h2>
-          <p>技術アルバイト、共同開発、プロジェクトに関するご連絡を歓迎します。</p>
+          <p>技術開発、解析・シミュレーション、組み込み、共同開発に関するご連絡を歓迎します。</p>
         </div>
         <div class="panel contact-links">
           <a href="mailto:minagawa-sota@ed.tmu.ac.jp"><span>Email</span><strong>minagawa-sota@ed.tmu.ac.jp</strong></a>
