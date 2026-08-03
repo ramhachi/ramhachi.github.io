@@ -29,12 +29,12 @@
             <a class="down-link" href="#about" aria-label="私についてへ移動">↓</a>
           </div>
         </div>
-        <div class="panel visual hero-visual" role="img" aria-label="本人の作業中写真を配置する場所">
+        <div class="panel visual hero-visual">
+          <img class="visual-media hero-photo" src="./assets/working-photo.jpg" alt="鳥人間コンテスト会場で機体を支える様子" />
           <div class="image-note image-note-light">
             <span>PHOTO 01</span>
-            <strong>作業中の本人写真</strong>
+            <strong>鳥人間コンテストでの製作・整備</strong>
           </div>
-          <div class="blueprint-lines" aria-hidden="true"><i></i><i></i><i></i></div>
         </div>
       </section>
 
@@ -112,10 +112,12 @@
             <a class="project-link" href="https://github.com/ramhachi/sim_overall" target="_blank" rel="noreferrer">View repository ↗</a>
           </div>
         </div>
-        <div class="panel visual project-visual visual-sim" role="img" aria-label="車両写真またはシミュレーション結果を配置する場所">
-          <span class="visual-code">14 DOF</span>
-          <div class="sim-rings" aria-hidden="true"></div>
-          <div class="image-note image-note-light"><span>PHOTO / FIGURE 02</span><strong>車両・シミュレータ・解析結果</strong></div>
+        <div class="panel visual project-visual visual-sim">
+          <video class="visual-media sim-video" autoplay muted loop playsinline preload="metadata" aria-label="14自由度車両シミュレータの動画">
+            <source src="./assets/14dof.mp4" type="video/mp4" />
+            お使いのブラウザは動画の再生に対応していません。
+          </video>
+          <div class="image-note image-note-light"><span>VIDEO / FIGURE 02</span><strong>14自由度車両シミュレータ</strong></div>
         </div>
       </article>
 
@@ -165,10 +167,9 @@
             <p class="stack">RP2040 / SENSORS / FIRMWARE / DATA ANALYSIS</p>
           </div>
         </div>
-        <div class="panel visual project-visual visual-logger" role="img" aria-label="データロガー、搭載状態、フライトグラフを配置する場所">
-          <span class="visual-code">RP2040</span>
-          <div class="logger-trace" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div class="image-note image-note-light"><span>PHOTO / FIGURE 04</span><strong>基板・搭載状態・フライトデータ</strong></div>
+        <div class="panel visual project-visual visual-logger">
+          <img class="visual-media logger-photo" src="./assets/data-logger.jpeg" alt="ノートPCに接続したフライトデータロガーの試作基板" />
+          <div class="image-note image-note-light"><span>PHOTO / FIGURE 04</span><strong>フライトデータロガー試作機</strong></div>
         </div>
       </article>
 
