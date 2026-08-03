@@ -112,8 +112,9 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
 .contact-title { display: flex; flex-direction: column; justify-content: center; padding: clamp(4rem, 9vw, 8rem); background: var(--yellow); }
 .contact-title > p:last-child { max-width: 25rem; margin-top: 2rem; font-family: var(--jp-body); font-size: .95rem; font-weight: var(--jp-body-weight); }
 .contact-links { display: flex; flex-direction: column; justify-content: center; padding: clamp(4rem, 8vw, 7.5rem); background: var(--black); color: var(--white); }
-.contact-links > a { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,.34); }.contact-links > a:first-child { border-top: 1px solid rgba(255,255,255,.34); }
-.contact-links a span { color: #bcbcbc; font-family: var(--label); font-size: .7rem; font-weight: 800; letter-spacing: .14em; }.contact-links a strong { font-size: .86rem; font-weight: 600; }.contact-links a:hover strong { color: var(--yellow); }
+.contact-links > a, .contact-email { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,.34); }.contact-links > a:first-child, .contact-email:first-child { border-top: 1px solid rgba(255,255,255,.34); }
+.contact-links a span, .contact-email span { color: #bcbcbc; font-family: var(--label); font-size: .7rem; font-weight: 800; letter-spacing: .14em; }.contact-links a strong, .contact-email strong { font-size: .86rem; font-weight: 600; }.contact-links a:hover strong { color: var(--yellow); }
+.contact-note { margin: .55rem 0 .75rem; color: #bcbcbc; font-family: var(--jp-body); font-size: .8rem; font-weight: var(--jp-body-weight); }
 footer { margin-top: 4rem; color: #8d8d8d; font-family: var(--label); font-size: .62rem; letter-spacing: .12em; }
 
 @media (max-width: 800px) {
@@ -137,7 +138,7 @@ footer { margin-top: 4rem; color: #8d8d8d; font-family: var(--label); font-size:
   .hero-byline { font-size: .8rem; letter-spacing: .12em; }
   .down-link { font-size: 3.5rem; }
   .section-header h2, .contact-title h2 { font-size: 1.35rem; }
-  .contact-links > a { display: grid; }
+  .contact-links > a, .contact-email { display: grid; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
