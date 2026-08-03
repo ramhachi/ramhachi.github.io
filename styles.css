@@ -103,12 +103,23 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
   padding: 1rem;
   color: var(--white);
   background: var(--orange);
+  border-radius: 50%;
   font-family: var(--jp-heading);
   font-size: clamp(1rem, 1.7vw, 1.45rem);
   font-weight: 400;
   line-height: 1.2;
   text-align: center;
-  transform: rotate(8deg);
+  white-space: nowrap;
+  isolation: isolate;
+  transform: rotate(-7deg);
+  pointer-events: none;
+}
+.dev-badge::before {
+  position: absolute;
+  inset: -.6rem;
+  z-index: -1;
+  background: var(--orange);
+  content: "";
   clip-path: polygon(
     50% 0%, 58% 12%, 70% 3%, 76% 16%, 90% 12%, 88% 28%,
     100% 35%, 88% 45%, 98% 58%, 84% 65%, 88% 82%, 72% 80%,
@@ -116,7 +127,6 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
     4% 68%, 14% 54%, 0% 44%, 15% 35%, 8% 20%, 24% 19%,
     30% 4%, 43% 13%
   );
-  pointer-events: none;
 }
 .project-inner { width: min(100%, 35rem); }
 .project-inner h3 { font-family: var(--label); font-size: clamp(1.5rem, 2.15vw, 2.15rem); font-weight: 600; letter-spacing: .17em; line-height: 1.45; }
