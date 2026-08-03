@@ -1,0 +1,14 @@
+鉄瓶ゴシック（07鉄瓶ゴシック）
+
+This font is bundled for the Japanese body text of this portfolio.
+The official font page states that the font may be used commercially and
+non-commercially under the Apache License 2.0. Please review the current
+license and README from the official distribution before redistributing this
+file in another project.
+
+Font page:
+https://booth.pm/ja/items/3970314
+
+Recommended credit:
+フォント：鉄瓶ゴシック
+フリーダウンロード：https://flopdesign.booth.pm/items/3970314

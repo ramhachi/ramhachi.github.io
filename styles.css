@@ -10,12 +10,20 @@
   --sans: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif;
   --label: "Raleway", "Noto Sans JP", Helvetica, sans-serif;
   --jp-heading: "Checkpoint", "Noto Sans JP", sans-serif;
+  --jp-body: "Tetsubin Gothic", "鉄瓶ゴシック", "Noto Sans JP", sans-serif;
 }
 
 * { box-sizing: border-box; }
 @font-face {
   font-family: "Checkpoint";
   src: url("./fonts/CP-Font.otf") format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Tetsubin Gothic";
+  src: url("./fonts/TetsubinGothic.otf") format("opentype");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -34,7 +42,7 @@ a { color: inherit; text-decoration: none; }
 .corner-label { position: absolute; top: 2rem; left: clamp(2rem, 7vw, 7.5rem); font-family: var(--label); font-size: .68rem; font-weight: 800; letter-spacing: .18em; }
 .hero-inner { width: min(100%, 31rem); text-align: center; }
 h1 { font-size: clamp(4.1rem, 6.8vw, 7.1rem); font-weight: 700; letter-spacing: -.055em; line-height: 1.02; }
-.hero-byline { margin-top: 2rem; font-family: var(--label); font-size: .84rem; font-weight: 600; letter-spacing: .19em; }
+.hero-byline { margin-top: 2rem; font-family: var(--label); font-size: 1.05rem; font-weight: 600; letter-spacing: .17em; }
 .down-link { display: inline-block; margin-top: 2rem; font-size: 4.5rem; font-weight: 700; line-height: 1; transition: transform .2s ease; }
 .down-link:hover, .down-link:focus-visible { transform: translateY(.35rem); }
 
@@ -56,7 +64,7 @@ h1 { font-size: clamp(4.1rem, 6.8vw, 7.1rem); font-weight: 700; letter-spacing: 
 .section-header h2, .contact-title h2 { font-family: var(--label); font-size: clamp(1.45rem, 2vw, 2rem); font-weight: 800; letter-spacing: .17em; line-height: 1.65; text-transform: uppercase; }
 .text-panel { display: flex; align-items: center; padding: clamp(4rem, 8vw, 7.5rem); background: var(--gray); }
 .reading-column { width: min(100%, 34rem); }
-.reading-column p { color: var(--muted); font-size: clamp(.98rem, 1.22vw, 1.12rem); }
+.reading-column p { color: var(--muted); font-family: var(--jp-body); font-size: clamp(.98rem, 1.22vw, 1.12rem); }
 .reading-column p + p { margin-top: 1.35rem; }
 .reading-column .lead { margin-bottom: 2rem; color: var(--black); font-family: var(--jp-heading); font-size: clamp(1.35rem, 2.1vw, 2rem); font-weight: 400; letter-spacing: .04em; line-height: 1.6; }
 .section-header-dark { color: var(--white); background: var(--black); }
@@ -72,8 +80,8 @@ h1 { font-size: clamp(4.1rem, 6.8vw, 7.1rem); font-weight: 700; letter-spacing: 
 .project-inner { width: min(100%, 35rem); }
 .project-inner h3 { font-family: var(--label); font-size: clamp(1.5rem, 2.15vw, 2.15rem); font-weight: 600; letter-spacing: .17em; line-height: 1.45; }
 .project-lead { margin-top: 2rem; font-family: var(--jp-heading); font-size: clamp(1.2rem, 1.65vw, 1.55rem); font-weight: 400; letter-spacing: .04em; line-height: 1.65; }
-.project-inner > p:not(.project-number):not(.project-lead):not(.stack) { margin-top: 1.5rem; color: var(--muted); font-size: .98rem; }
-.result-list { display: grid; gap: .55rem; margin-top: 1.8rem; padding: 0; list-style: none; font-size: .9rem; }
+.project-inner > p:not(.project-number):not(.project-lead):not(.stack) { margin-top: 1.5rem; color: var(--muted); font-family: var(--jp-body); font-size: .98rem; }
+.result-list { display: grid; gap: .55rem; margin-top: 1.8rem; padding: 0; list-style: none; font-family: var(--jp-body); font-size: .9rem; }
 .result-list li { position: relative; padding-left: 1.15rem; }.result-list li::before { position: absolute; top: .78rem; left: 0; width: .38rem; height: .38rem; background: var(--black); content: ""; }
 .stack { margin-top: 2rem; color: var(--muted); font-family: var(--label); font-size: .64rem; font-weight: 800; letter-spacing: .15em; line-height: 1.8; }
 .project-link { display: inline-block; margin-top: 1.5rem; border-bottom: 2px solid var(--black); font-size: .86rem; font-weight: 700; }
@@ -88,11 +96,11 @@ h1 { font-size: clamp(4.1rem, 6.8vw, 7.1rem); font-weight: 700; letter-spacing: 
 
 .skill-panel { display: grid; align-content: center; padding: clamp(4rem, 7vw, 7rem); background: var(--black); color: var(--white); }
 .skill-row { display: grid; grid-template-columns: 2.7rem 1fr; gap: 1.2rem; padding: 1.7rem 0; border-bottom: 1px solid rgba(255,255,255,.3); }.skill-row:first-child { border-top: 1px solid rgba(255,255,255,.3); }
-.skill-row > span { color: var(--yellow); font-size: .76rem; }.skill-row h3 { font-family: var(--label); font-size: .92rem; font-weight: 800; letter-spacing: .12em; }.skill-row p { margin-top: .45rem; color: #bcbcbc; font-size: .88rem; }
+.skill-row > span { color: var(--yellow); font-size: .76rem; }.skill-row h3 { font-family: var(--label); font-size: .92rem; font-weight: 800; letter-spacing: .12em; }.skill-row p { margin-top: .45rem; color: #bcbcbc; font-size: .88rem; }.jp-body { font-family: var(--jp-body); }
 
 .contact { min-height: 33rem; }
 .contact-title { display: flex; flex-direction: column; justify-content: center; padding: clamp(4rem, 9vw, 8rem); background: var(--yellow); }
-.contact-title > p:last-child { max-width: 25rem; margin-top: 2rem; font-size: .95rem; }
+.contact-title > p:last-child { max-width: 25rem; margin-top: 2rem; font-family: var(--jp-body); font-size: .95rem; }
 .contact-links { display: flex; flex-direction: column; justify-content: center; padding: clamp(4rem, 8vw, 7.5rem); background: var(--black); color: var(--white); }
 .contact-links > a { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,.34); }.contact-links > a:first-child { border-top: 1px solid rgba(255,255,255,.34); }
 .contact-links a span { color: #bcbcbc; font-family: var(--label); font-size: .7rem; font-weight: 800; letter-spacing: .14em; }.contact-links a strong { font-size: .86rem; font-weight: 600; }.contact-links a:hover strong { color: var(--yellow); }
@@ -115,7 +123,7 @@ footer { margin-top: 4rem; color: #8d8d8d; font-family: var(--label); font-size:
 @media (max-width: 480px) {
   .hero-copy { padding: 5rem 1.4rem 3rem; }
   h1 { font-size: clamp(3.25rem, 17vw, 4.6rem); }
-  .hero-byline { font-size: .68rem; letter-spacing: .14em; }
+  .hero-byline { font-size: .8rem; letter-spacing: .12em; }
   .down-link { font-size: 3.5rem; }
   .section-header h2, .contact-title h2 { font-size: 1.35rem; }
   .contact-links > a { display: grid; }
