@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Raleway:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260803-4" />
+    <link rel="stylesheet" href="./styles.css?v=20260803-5" />
   </head>
   <body>
     <a class="skip-link" href="#main">本文へ移動</a>
@@ -112,12 +112,24 @@
             <a class="project-link" href="https://github.com/ramhachi/sim_overall" target="_blank" rel="noreferrer">View repository ↗</a>
           </div>
         </div>
-        <div class="panel visual project-visual visual-sim">
-          <video class="visual-media sim-video" autoplay muted loop playsinline preload="metadata" aria-label="14自由度車両シミュレータの動画">
-            <source src="./assets/14dof.mp4" type="video/mp4" />
-            お使いのブラウザは動画の再生に対応していません。
-          </video>
-          <div class="image-note image-note-light"><span>VIDEO / FIGURE 02</span><strong>14自由度車両シミュレータ</strong></div>
+        <div class="panel visual project-visual visual-sim sim-showcase">
+          <div class="sim-video-frame">
+            <video class="visual-media sim-video" autoplay muted loop playsinline preload="metadata" aria-label="14自由度車両シミュレータの動画">
+              <source src="./assets/14dof.mp4" type="video/mp4" />
+              お使いのブラウザは動画の再生に対応していません。
+            </video>
+            <div class="image-note image-note-light"><span>VIDEO / FIGURE 02</span><strong>14自由度車両シミュレータ</strong></div>
+          </div>
+          <div class="sim-gallery" aria-label="sim_overallの解析・最適化結果">
+            <figure class="sim-figure">
+              <img src="./assets/tire-data-analysis.jpg" alt="タイヤデータの計測値とPINNモデルによるフィッティング結果" />
+              <figcaption><span>FIGURE 03</span><strong>タイヤデータ解析</strong></figcaption>
+            </figure>
+            <figure class="sim-figure">
+              <img src="./assets/suspension-geometry-optimization.jpg" alt="最適化後のサスペンション3次元ジオメトリ" />
+              <figcaption><span>FIGURE 04</span><strong>サスジオ最適化</strong></figcaption>
+            </figure>
+          </div>
         </div>
       </article>
 
