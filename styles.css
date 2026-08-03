@@ -9,9 +9,17 @@
   --muted: #606060;
   --sans: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif;
   --label: "Raleway", "Noto Sans JP", Helvetica, sans-serif;
+  --jp-heading: "Checkpoint", "Noto Sans JP", sans-serif;
 }
 
 * { box-sizing: border-box; }
+@font-face {
+  font-family: "Checkpoint";
+  src: url("./fonts/CP-Font.otf") format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--black); background: var(--white); font-family: var(--sans); line-height: 1.8; }
 h1, h2, h3, p, ul { margin: 0; }
@@ -50,7 +58,7 @@ h1 { font-size: clamp(4.1rem, 6.8vw, 7.1rem); font-weight: 700; letter-spacing: 
 .reading-column { width: min(100%, 34rem); }
 .reading-column p { color: var(--muted); font-size: clamp(.98rem, 1.22vw, 1.12rem); }
 .reading-column p + p { margin-top: 1.35rem; }
-.reading-column .lead { margin-bottom: 2rem; color: var(--black); font-size: clamp(1.35rem, 2.1vw, 2rem); font-weight: 700; line-height: 1.6; }
+.reading-column .lead { margin-bottom: 2rem; color: var(--black); font-family: var(--jp-heading); font-size: clamp(1.35rem, 2.1vw, 2rem); font-weight: 400; letter-spacing: .04em; line-height: 1.6; }
 .section-header-dark { color: var(--white); background: var(--black); }
 .text-panel-yellow, .section-header-yellow { background: var(--yellow); }
 
@@ -63,7 +71,7 @@ h1 { font-size: clamp(4.1rem, 6.8vw, 7.1rem); font-weight: 700; letter-spacing: 
 .project-copy { display: flex; align-items: center; padding: clamp(4rem, 8vw, 7.5rem); background: var(--white); }
 .project-inner { width: min(100%, 35rem); }
 .project-inner h3 { font-family: var(--label); font-size: clamp(1.5rem, 2.15vw, 2.15rem); font-weight: 600; letter-spacing: .17em; line-height: 1.45; }
-.project-lead { margin-top: 2rem; font-size: clamp(1.2rem, 1.65vw, 1.55rem); font-weight: 700; line-height: 1.65; }
+.project-lead { margin-top: 2rem; font-family: var(--jp-heading); font-size: clamp(1.2rem, 1.65vw, 1.55rem); font-weight: 400; letter-spacing: .04em; line-height: 1.65; }
 .project-inner > p:not(.project-number):not(.project-lead):not(.stack) { margin-top: 1.5rem; color: var(--muted); font-size: .98rem; }
 .result-list { display: grid; gap: .55rem; margin-top: 1.8rem; padding: 0; list-style: none; font-size: .9rem; }
 .result-list li { position: relative; padding-left: 1.15rem; }.result-list li::before { position: absolute; top: .78rem; left: 0; width: .38rem; height: .38rem; background: var(--black); content: ""; }

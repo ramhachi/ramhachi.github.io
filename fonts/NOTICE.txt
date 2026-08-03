@@ -1,0 +1,14 @@
+CP Font / チェックポイントフォント
+
+Font version: 2.076 (OpenType Edition)
+Copyright: 2010-2019 Maruse / Project U-Fo
+
+The font file is included unmodified for use as a web font.
+The bundled readme states that use on websites and in commercial projects is permitted.
+Please retain this notice and consult the original readme for the complete terms.
+
+Distribution page:
+https://cute-freefont.flop.jp/tori_checkpoint.html
+
+Original creator page:
+http://marusexijaxs.web.fc2.com/
