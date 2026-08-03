@@ -91,6 +91,33 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
 
 .project-row { min-height: 45rem; border-top: 1px solid #d2d2d2; }
 .project-copy { display: flex; align-items: center; padding: clamp(4rem, 8vw, 7.5rem); background: var(--white); }
+.dev-badge {
+  position: absolute;
+  top: clamp(2rem, 4vw, 4rem);
+  right: clamp(2rem, 5vw, 5rem);
+  z-index: 2;
+  display: grid;
+  width: clamp(7rem, 10vw, 9.5rem);
+  aspect-ratio: 1;
+  place-items: center;
+  padding: 1rem;
+  color: var(--white);
+  background: var(--orange);
+  font-family: var(--jp-heading);
+  font-size: clamp(1rem, 1.7vw, 1.45rem);
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  transform: rotate(8deg);
+  clip-path: polygon(
+    50% 0%, 58% 12%, 70% 3%, 76% 16%, 90% 12%, 88% 28%,
+    100% 35%, 88% 45%, 98% 58%, 84% 65%, 88% 82%, 72% 80%,
+    64% 96%, 52% 84%, 40% 100%, 34% 85%, 18% 90%, 20% 74%,
+    4% 68%, 14% 54%, 0% 44%, 15% 35%, 8% 20%, 24% 19%,
+    30% 4%, 43% 13%
+  );
+  pointer-events: none;
+}
 .project-inner { width: min(100%, 35rem); }
 .project-inner h3 { font-family: var(--label); font-size: clamp(1.5rem, 2.15vw, 2.15rem); font-weight: 600; letter-spacing: .17em; line-height: 1.45; }
 .project-lead { margin-top: 2rem; font-family: var(--jp-heading); font-size: clamp(1.2rem, 1.65vw, 1.55rem); font-weight: 400; letter-spacing: .04em; line-height: 1.65; }
@@ -128,6 +155,7 @@ footer { margin-top: 4rem; color: #8d8d8d; font-family: var(--label); font-size:
   .text-panel, .project-copy, .skill-panel, .contact-title, .contact-links { padding: 4rem 2rem; }
   .project-visual { min-height: 66svh; }
   .project-visual.visual-cfd { min-height: 0; aspect-ratio: 5 / 2; }
+  .dev-badge { top: 1.25rem; right: 1.25rem; width: 6.5rem; font-size: 1rem; }
   .contact-title { min-height: 24rem; }
   .contact-links { min-height: 26rem; }
 }
