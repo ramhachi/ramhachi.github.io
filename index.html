@@ -7,236 +7,189 @@
       name="description"
       content="皆川草太の技術ポートフォリオ。FSAE、空力最適化、組み込み開発、数値シミュレーション。"
     />
-    <title>皆川草太 | Engineering Portfolio</title>
+    <title>皆川草太 | Integrated Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Raleway:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main-content">本文へ移動</a>
+    <a class="skip-link" href="#main">本文へ移動</a>
 
-    <header class="site-header">
-      <div class="nav-shell">
-        <a class="wordmark" href="#top" aria-label="皆川草太のポートフォリオ、トップへ">
-          <span class="wordmark-mark">SM</span>
-          <span>皆川草太 <small>/ Sota Minagawa</small></span>
-        </a>
-        <nav aria-label="メインナビゲーション">
-          <a href="#about">私について</a>
-          <a href="#projects">制作・研究</a>
-          <a href="#notes">技術ノート</a>
-          <a href="#contact">連絡先</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <section id="top" class="hero section-shell">
-        <div class="hero-copy reveal">
-          <p class="kicker">ENGINEERING FIELD NOTES / 2026</p>
-          <h1>
-            機械を作り、<br />
-            コードを書き、<br />
-            <em>現場で確かめる。</em>
-          </h1>
-          <p class="hero-lead">
-            機械・電気・ソフトウェアを横断し、複雑な課題を実現可能な形まで分解していく技術者です。設計、解析、製作、検証を一つの流れとして扱います。
-          </p>
-          <div class="hero-actions">
-            <a class="button button-ink" href="#projects">制作・研究を見る <span>↓</span></a>
-            <a class="button button-line" href="#contact">連絡する <span>↗</span></a>
+    <main id="main">
+      <section class="split hero" id="top">
+        <div class="panel hero-copy">
+          <div class="corner-label">SOTA MINAGAWA / PORTFOLIO</div>
+          <div class="hero-inner">
+            <h1>Integrated<br />Engineering</h1>
+            <p class="hero-byline">Portfolio by Sota Minagawa</p>
+            <a class="down-link" href="#about" aria-label="私についてへ移動">↓</a>
           </div>
         </div>
-
-        <div class="hero-board reveal" aria-label="作業中写真のダミー枠">
-          <div class="tape tape-top">WORK IN PROGRESS</div>
-          <figure class="media-slot portrait-slot">
-            <div class="placeholder-content">
-              <span class="slot-icon">⌁</span>
-              <strong>PHOTO 01</strong>
-              <small>本人の作業中写真</small>
-            </div>
-            <figcaption>ここに「製作・実験中の本人写真」</figcaption>
-          </figure>
-          <div class="pinned-note note-orange">
-            <span>Focus</span>
-            <strong>Design<br />→ Build<br />→ Verify</strong>
+        <div class="panel visual hero-visual" role="img" aria-label="本人の作業中写真を配置する場所">
+          <div class="image-note image-note-light">
+            <span>PHOTO 01</span>
+            <strong>作業中の本人写真</strong>
           </div>
-          <div class="mini-plot" aria-hidden="true">
-            <span class="plot-label">SYSTEM MAP</span>
-            <i></i><i></i><i></i><i></i><i></i>
+          <div class="blueprint-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <section class="split section-row" id="about">
+        <header class="panel section-header">
+          <p class="section-number">01</p>
+          <h2>About me</h2>
+        </header>
+        <div class="panel text-panel">
+          <div class="reading-column">
+            <p class="lead">
+              機械を作り、コードを書き、現場で確かめる。
+            </p>
+            <p>
+              皆川草太です。機械・電気・ソフトウェアを横断し、複雑な課題を実現可能な形まで分解していくことを得意としています。
+            </p>
+            <p>
+              FSAEと鳥人間コンテストを通じて、車両運動、空力、組み込み、数値解析に取り組んできました。数式やシミュレーションだけで終えず、実装し、作り、測り、次の設計へ戻すところまでを一つの開発として扱います。
+            </p>
+            <p>
+              アーキテクチャを先に設計して技術的な難しさを整理し、関係者と条件をすり合わせながら、現場で使える形まで持っていくことが私の強みです。
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="about" class="about section-shell">
-        <div class="section-label reveal"><span>01</span> ABOUT ME</div>
-        <div class="about-grid">
-          <h2 class="reveal">専門の境界を<br />つなげて、<br /><span>前に進める。</span></h2>
-          <div class="about-copy reveal">
+      <section class="split section-row work-intro" id="projects">
+        <header class="panel section-header section-header-dark">
+          <p class="section-number">02</p>
+          <h2>Selected<br />work</h2>
+        </header>
+        <div class="panel text-panel text-panel-yellow">
+          <div class="reading-column">
+            <p class="lead">設計・解析・製作を、分断せずに扱う。</p>
             <p>
-              私の関心は、複数の分野が交わる場所にあります。数式だけで終わらせず、実装し、作り、測り、次の設計に戻す。その循環をつくることが得意です。
+              代表的な三つのプロジェクトです。それぞれ、課題設定からアーキテクチャ、実装、検証までを担当しています。
             </p>
-            <p>
-              FSAEと鳥人間コンテストでは、車両・空力・組み込み・解析に取り組んできました。技術的な難しさを分解し、関係者と条件をすり合わせながら、現場で使えるものに仕上げます。
-            </p>
+            <nav class="project-index" aria-label="プロジェクト一覧">
+              <a href="#sim"><span>01</span> sim_overall</a>
+              <a href="#cfd"><span>02</span> CFD-SDF</a>
+              <a href="#logger"><span>03</span> Flight Data Logger</a>
+            </nav>
           </div>
-        </div>
-
-        <div class="strength-grid">
-          <article class="strength reveal">
-            <span class="strength-index">A</span>
-            <h3>分解する</h3>
-            <p>曖昧で複雑な課題を、検証できる設計・解析・実装の単位へ切り分けます。</p>
-          </article>
-          <article class="strength reveal">
-            <span class="strength-index">B</span>
-            <h3>つなぐ</h3>
-            <p>機械、電気、ソフトウェアと、設計者・製作者・利用者の視点を接続します。</p>
-          </article>
-          <article class="strength reveal">
-            <span class="strength-index">C</span>
-            <h3>実装する</h3>
-            <p>シミュレーションだけで終えず、実機や実データで確かめられるところまで持っていきます。</p>
-          </article>
         </div>
       </section>
 
-      <section id="projects" class="projects section-shell">
-        <div class="section-heading reveal">
-          <div class="section-label"><span>02</span> SELECTED WORK</div>
-          <h2>制作・研究</h2>
-          <p>課題をどう捉え、何を設計し、どこまで検証したか。</p>
-        </div>
-
-        <article class="project project-blue reveal">
-          <div class="project-visual visual-sim">
-            <div class="visual-topline">SIMULATION PLATFORM / 14+ DOF</div>
-            <div class="sim-road"></div>
-            <div class="sim-car"><span></span><span></span><span></span></div>
-            <div class="sim-graph"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <span class="visual-placeholder">DUMMY: シミュレータ画面 / 車両写真 / 解析結果</span>
-          </div>
-          <div class="project-details">
-            <p class="project-number">PROJECT 01</p>
+      <article class="split project-row" id="sim">
+        <div class="panel project-copy">
+          <div class="project-inner">
+            <p class="project-number">PROJECT 01 / VEHICLE SYSTEMS</p>
             <h3>sim_overall</h3>
-            <p class="project-tagline">FSAE車両開発のための、総合シミュレーション・最適化プラットフォーム。</p>
-            <p>
-              車両全体の設計と部品単位の設計を、同じ開発基盤で検討するためにゼロから構築しました。アーキテクチャとインターフェースを先に定義し、機能を継続的に追加・検証できる構造にしています。
+            <p class="project-lead">
+              FSAE車両の全体設計と部品設計を、一つの基盤で最適化する。
             </p>
-            <ul class="outcome-list">
-              <li>高自由度の車両シミュレータをゼロから開発</li>
-              <li>PINNによるタイヤデータフィッティングを実装</li>
-              <li>3D梁CAEを開発し、フレーム解析時間を約36万分の1に短縮</li>
-              <li>サスペンション、ドライバモデルを自動最適化</li>
+            <p>
+              高自由度車両シミュレータをゼロから構築。アーキテクチャとインターフェースを先に定義し、AIエージェントを含む実装手段を組み込みやすい構造にすることで、開発速度と拡張性を高めました。
+            </p>
+            <ul class="result-list">
+              <li>PINNによるタイヤデータフィッティング</li>
+              <li>3D梁CAEを開発し、解析時間を約36万分の1に短縮</li>
+              <li>サスペンションジオメトリの自動最適化</li>
+              <li>RL・MPC・PIDによるドライバモデルの最適化</li>
             </ul>
-            <div class="project-footer">
-              <span>Python · C++ · MATLAB · PINN · RL / MPC / PID</span>
-              <a href="https://github.com/ramhachi/sim_overall" target="_blank" rel="noreferrer">GitHub ↗</a>
-            </div>
+            <p class="stack">PYTHON / C++ / MATLAB / PINN / RL / MPC</p>
+            <a class="project-link" href="https://github.com/ramhachi/sim_overall" target="_blank" rel="noreferrer">View repository ↗</a>
           </div>
-        </article>
+        </div>
+        <div class="panel visual project-visual visual-sim" role="img" aria-label="車両写真またはシミュレーション結果を配置する場所">
+          <span class="visual-code">14 DOF</span>
+          <div class="sim-rings" aria-hidden="true"></div>
+          <div class="image-note image-note-light"><span>PHOTO / FIGURE 02</span><strong>車両・シミュレータ・解析結果</strong></div>
+        </div>
+      </article>
 
-        <article class="project project-orange reveal">
-          <div class="project-visual visual-cfd">
-            <div class="visual-topline">SHAPE EXPLORATION / SDF + CFD</div>
-            <div class="cfd-grid"></div>
-            <div class="cfd-shape shape-one"></div>
-            <div class="cfd-shape shape-two"></div>
-            <div class="cfd-contour contour-one"></div>
-            <div class="cfd-contour contour-two"></div>
-            <span class="visual-placeholder">DUMMY: 圧力分布 / メッシュ / 最適化形状</span>
-          </div>
-          <div class="project-details">
-            <p class="project-number">PROJECT 02</p>
+      <article class="split project-row" id="cfd">
+        <div class="panel project-copy">
+          <div class="project-inner">
+            <p class="project-number">PROJECT 02 / AERODYNAMICS</p>
             <h3>CFD-SDF</h3>
-            <p class="project-tagline">トポロジーの変化を許容する、空力設計の自動最適化。</p>
-            <p>
-              FSAEと鳥人間コンテストの空力設計を対象に、Signed Distance Field（SDF）を用いた最適化手法を開発しました。形状のトポロジーを固定しやすい従来手法の制約を越え、最適化の途中でも構造が変化できる形状表現を目指しています。
+            <p class="project-lead">
+              トポロジーの変化を許容する、空力形状の自動最適化。
             </p>
-            <ul class="outcome-list">
+            <p>
+              FSAEと鳥人間コンテストの空力設計を対象に、Signed Distance Field（SDF）を用いた最適化手法を開発しました。従来手法で固定されやすかった形状トポロジーを、最適化の途中でも変化させられる表現へ置き換えています。
+            </p>
+            <ul class="result-list">
               <li>任意形状を対象とした空力最適化</li>
-              <li>最適化過程でのトポロジー変化を許容</li>
-              <li>形状表現、CFD解析、探索処理を統合</li>
-              <li>FSAE・鳥人間コンテストへの応用を設計</li>
+              <li>最適化中のトポロジー変化を許容</li>
+              <li>SDF、CFD解析、探索処理を統合</li>
             </ul>
-            <div class="project-footer">
-              <span>OpenFOAM · SDF · topology optimization</span>
-              <a href="https://github.com/ramhachi/CFD_opt_sdf" target="_blank" rel="noreferrer">GitHub ↗</a>
-            </div>
+            <p class="stack">OPENFOAM / SDF / TOPOLOGY OPTIMIZATION</p>
+            <a class="project-link" href="https://github.com/ramhachi/CFD_opt_sdf" target="_blank" rel="noreferrer">View repository ↗</a>
           </div>
-        </article>
+        </div>
+        <div class="panel visual project-visual visual-cfd" role="img" aria-label="CFD結果、メッシュ、最適化形状を配置する場所">
+          <span class="visual-code">SDF</span>
+          <div class="flow-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="image-note image-note-dark"><span>FIGURE 03</span><strong>CFD・メッシュ・最適化形状</strong></div>
+        </div>
+      </article>
 
-        <article class="project project-green reveal">
-          <div class="project-visual visual-logger">
-            <div class="visual-topline">FLIGHT LOGGER / RP2040</div>
-            <div class="logger-board"><b>RP</b><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <div class="logger-trace"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            <span class="visual-placeholder">DUMMY: 基板写真 / 搭載状態 / フライトデータ</span>
-          </div>
-          <div class="project-details">
-            <p class="project-number">PROJECT 03</p>
-            <h3>フライトデータロガー</h3>
-            <p class="project-tagline">飛行を理解するために、必要なデータを確実に残す。</p>
-            <p>
-              2024年・2025年の鳥人間コンテストにおけるフライトを分析するためのデータロガーです。要件設定、ハードウェア、組み込みソフトウェアを一貫して担当し、軽量化と計測の確実性を両立しました。
+      <article class="split project-row" id="logger">
+        <div class="panel project-copy">
+          <div class="project-inner">
+            <p class="project-number">PROJECT 03 / EMBEDDED SYSTEMS</p>
+            <h3>Flight Data<br />Logger</h3>
+            <p class="project-lead">
+              フライトを理解するために、必要なデータを確実に残す。
             </p>
-            <ul class="outcome-list">
-              <li>高度、姿勢、速度、GPS、湿度、大気圧を記録</li>
-              <li>RP2040のコア特性を使い、待ち時間を削減</li>
-              <li>最低限の構成に絞り、軽量な実装を設計</li>
-              <li>実フライトの失敗原因をデータから分析</li>
+            <p>
+              2024年・2025年の鳥人間コンテストに向けて、要件設定、ハードウェア、組み込みソフトウェアを一貫して開発。RP2040のコア特性を利用して処理の待ち時間を減らし、軽量化のために必要十分な構成へ絞りました。
+            </p>
+            <ul class="result-list">
+              <li>高度・姿勢・速度・GPS・湿度・大気圧を取得</li>
+              <li>RP2040を活用した低待ち時間の処理設計</li>
+              <li>実フライトデータから失敗原因を分析</li>
             </ul>
-            <div class="project-footer">
-              <span>RP2040 · sensors · embedded software · data analysis</span>
-              <span class="project-status">詳細は面談時に紹介します</span>
-            </div>
+            <p class="stack">RP2040 / SENSORS / FIRMWARE / DATA ANALYSIS</p>
           </div>
-        </article>
-      </section>
+        </div>
+        <div class="panel visual project-visual visual-logger" role="img" aria-label="データロガー、搭載状態、フライトグラフを配置する場所">
+          <span class="visual-code">RP2040</span>
+          <div class="logger-trace" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="image-note image-note-light"><span>PHOTO / FIGURE 04</span><strong>基板・搭載状態・フライトデータ</strong></div>
+        </div>
+      </article>
 
-      <section id="notes" class="notes section-shell">
-        <div class="section-heading reveal">
-          <div class="section-label"><span>03</span> FIELD MATERIAL</div>
-          <h2>写真と図で残す<br />技術ノート。</h2>
-          <p>実際の製作・試験・解析の写真に差し替える予定のラフです。</p>
-        </div>
-        <div class="gallery-grid">
-          <figure class="gallery-item gallery-wide reveal"><div class="placeholder-content"><strong>PHOTO 02</strong><small>車両全体 / 走行・試験風景</small></div><figcaption>Vehicle in the field</figcaption></figure>
-          <figure class="gallery-item gallery-tall reveal"><div class="placeholder-content"><strong>PHOTO 03</strong><small>製作・整備・実験中</small></div><figcaption>Build &amp; test</figcaption></figure>
-          <figure class="gallery-item gallery-chart reveal"><div class="placeholder-content"><strong>FIGURE 01</strong><small>CFD結果・メッシュ・最適化履歴</small></div><figcaption>Design data</figcaption></figure>
-          <figure class="gallery-item gallery-cad reveal"><div class="placeholder-content"><strong>PHOTO 04</strong><small>CAD画面 / 部品 / 基板</small></div><figcaption>Making details</figcaption></figure>
-        </div>
-      </section>
-
-      <section class="toolbox section-shell">
-        <div class="toolbox-intro reveal">
-          <div class="section-label"><span>04</span> TOOLBOX</div>
-          <h2>扱う領域</h2>
-        </div>
-        <div class="toolbox-list reveal">
-          <div><span>01</span><strong>Simulation &amp; Optimization</strong><p>Python / C++ / MATLAB / OpenFOAM / PINN / RL / MPC</p></div>
-          <div><span>02</span><strong>Mechanical Design</strong><p>CAD / CAE / vehicle dynamics / aerodynamics / manufacturing</p></div>
-          <div><span>03</span><strong>Embedded &amp; Data</strong><p>RP2040 / sensors / firmware / logging / data analysis</p></div>
+      <section class="split section-row" id="skills">
+        <header class="panel section-header section-header-yellow">
+          <p class="section-number">03</p>
+          <h2>Skills &amp;<br />approach</h2>
+        </header>
+        <div class="panel skill-panel">
+          <div class="skill-row"><span>01</span><div><h3>Simulation &amp; Optimization</h3><p>Python, C++, MATLAB, OpenFOAM, PINN, RL, MPC</p></div></div>
+          <div class="skill-row"><span>02</span><div><h3>Mechanical Design</h3><p>CAD, CAE, vehicle dynamics, aerodynamics, manufacturing</p></div></div>
+          <div class="skill-row"><span>03</span><div><h3>Embedded &amp; Data</h3><p>RP2040, sensors, firmware, logging, data analysis</p></div></div>
+          <div class="skill-row"><span>04</span><div><h3>Architecture First</h3><p>複雑な開発を分解し、実装と検証を継続できる構造へ整理します。</p></div></div>
         </div>
       </section>
 
-      <section id="contact" class="contact section-shell">
-        <div class="contact-card reveal">
-          <p class="kicker">LET'S TALK</p>
-          <h2>一緒に、<br />難しい課題を<br /><em>前に進めませんか。</em></h2>
+      <section class="split contact" id="contact">
+        <div class="panel contact-title">
+          <p class="section-number">04</p>
+          <h2>Get in<br />touch</h2>
           <p>技術アルバイト、共同開発、プロジェクトに関するご連絡を歓迎します。</p>
-          <div class="contact-links">
-            <a href="mailto:minagawa-sota@ed.tmu.ac.jp">minagawa-sota@ed.tmu.ac.jp <span>↗</span></a>
-            <a href="https://www.linkedin.com/in/%E8%8D%89%E5%A4%AA-%E7%9A%86%E5%B7%9D-ramhachi888" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
-            <a href="https://github.com/ramhachi" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-          </div>
+        </div>
+        <div class="panel contact-links">
+          <a href="mailto:minagawa-sota@ed.tmu.ac.jp"><span>Email</span><strong>minagawa-sota@ed.tmu.ac.jp</strong></a>
+          <a href="https://www.linkedin.com/in/%E8%8D%89%E5%A4%AA-%E7%9A%86%E5%B7%9D-ramhachi888" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>Profile ↗</strong></a>
+          <a href="https://github.com/ramhachi" target="_blank" rel="noreferrer"><span>GitHub</span><strong>ramhachi ↗</strong></a>
+          <footer>© <span id="year"></span> Sota Minagawa</footer>
         </div>
       </section>
     </main>
 
-    <footer>
-      <span>© <span id="year"></span> Sota Minagawa</span>
-      <span>Designed as an engineering field note.</span>
-    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
