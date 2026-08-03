@@ -58,7 +58,7 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
 .hero-visual { min-height: 100svh; background: var(--black); }
 .visual-media { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
 .hero-photo { object-position: 61% 50%; }
-.sim-video { object-position: center; }
+.sim-video { background: #0d1931; object-fit: contain; object-position: center; }
 .logger-photo { object-position: center 62%; }
 .image-note { position: absolute; z-index: 3; right: 2rem; bottom: 1.6rem; display: grid; gap: .18rem; text-align: right; }
 .image-note span { font-family: var(--label); font-size: .62rem; font-weight: 800; letter-spacing: .18em; }
@@ -101,7 +101,7 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
 .project-link { display: inline-block; margin-top: 1.5rem; border-bottom: 2px solid var(--black); font-size: .86rem; font-weight: 700; }
 .project-link:hover { border-color: var(--orange); color: var(--orange); }
 .project-visual { min-height: 45rem; }
-.visual-sim { background: var(--blue); }.visual-cfd { background: var(--orange); }.visual-logger { background: var(--green); }
+.visual-sim { background: #0d1931; }.visual-cfd { background: var(--orange); }.visual-logger { background: var(--green); }
 .flow-lines { position: absolute; inset: 12% -8%; }.flow-lines i { position: absolute; left: 0; width: 100%; height: 15%; border: 2px solid rgba(0,0,0,.49); border-color: rgba(0,0,0,.49) transparent transparent; border-radius: 50%; }.flow-lines i:nth-child(1) { top: 10%; transform: rotate(4deg); }.flow-lines i:nth-child(2) { top: 28%; transform: rotate(-5deg); }.flow-lines i:nth-child(3) { top: 47%; transform: rotate(7deg); }.flow-lines i:nth-child(4) { top: 65%; transform: rotate(-7deg); }.flow-lines i:nth-child(5) { top: 82%; transform: rotate(3deg); }
 
 .skill-panel { display: grid; align-content: center; padding: clamp(4rem, 7vw, 7rem); background: var(--black); color: var(--white); }
