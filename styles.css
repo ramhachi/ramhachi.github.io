@@ -155,9 +155,9 @@ h1 { font-family: "Source Sans 3", "Noto Sans JP", Helvetica, sans-serif; font-s
 .skill-row > span { color: var(--yellow); font-size: .76rem; }.skill-row h3 { font-family: var(--label); font-size: .92rem; font-weight: 800; letter-spacing: .12em; }.skill-row p { margin-top: .45rem; color: #bcbcbc; font-size: .88rem; }.jp-body { font-family: var(--jp-body); font-weight: var(--jp-body-weight); }
 
 .contact { min-height: 33rem; }
-.contact-title { display: flex; flex-direction: column; justify-content: center; padding: clamp(4rem, 9vw, 8rem); background: var(--orange); }
+.contact-title { display: flex; flex-direction: column; justify-content: center; padding: clamp(4rem, 9vw, 8rem); background: var(--yellow); }
 .contact-title > p:last-child { max-width: 25rem; margin-top: 2rem; font-family: var(--jp-body); font-size: .95rem; font-weight: var(--jp-body-weight); }
-.contact-links { display: flex; flex-direction: column; justify-content: center; padding: clamp(4rem, 8vw, 7.5rem); background: var(--blue); color: var(--white); }
+.contact-links { display: flex; flex-direction: column; justify-content: center; padding: clamp(4rem, 8vw, 7.5rem); background: var(--black); color: var(--white); }
 .contact-links > a, .contact-email { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,.34); }.contact-links > a:first-child, .contact-email:first-child { border-top: 1px solid rgba(255,255,255,.34); }
 .contact-links a span, .contact-email span { color: #bcbcbc; font-family: var(--label); font-size: .7rem; font-weight: 800; letter-spacing: .14em; }.contact-links a strong, .contact-email strong { font-size: .86rem; font-weight: 600; }.contact-links a:hover strong { color: var(--yellow); }
 .contact-note { margin: .55rem 0 .75rem; color: #bcbcbc; font-family: var(--jp-body); font-size: .8rem; font-weight: var(--jp-body-weight); }
