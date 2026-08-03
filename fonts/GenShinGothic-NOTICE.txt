@@ -1,0 +1,15 @@
+源真ゴシック（Gen Shin Gothic）
+
+This font is bundled for the Japanese body text of this portfolio.
+The font is distributed under the SIL Open Font License 1.1. The original
+license text is included in SIL_Open_Font_License_1.1.txt.
+
+Official font page:
+http://jikasei.me/font/genshin/
+
+Source archive:
+https://ftp.iij.ad.jp/pub/osdn.jp/users/8/8637/genshingothic-20150607.zip
+
+Recommended credit:
+フォント：源真ゴシック
+配布元：自家製フォント工房
